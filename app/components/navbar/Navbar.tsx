@@ -1,5 +1,8 @@
+
 // rafce short cut 
-import React from 'react'
+'user client';
+
+import React from 'react';
 import Container from "../Container";
 import Logo from "./Logo";
 import Search from './Search';
