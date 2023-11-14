@@ -14,7 +14,7 @@ interface ModalProps {
     actionLabel: string;
     disable?: boolean;
     secondaryAction?: () => void;
-    secondaryLabel?: string;
+    secondaryActionLabel?: string;
 
 }
 
@@ -28,7 +28,7 @@ const Modal: React.FC<ModalProps> = ({
     actionLabel,
     disable,
     secondaryAction,
-    secondaryLabel
+    secondaryActionLabel
 }) => {
     const [showModal, setShowModal] = useState(isOpen);
 
@@ -167,7 +167,19 @@ const Modal: React.FC<ModalProps> = ({
                             w-full
                             "
                             >
-                            <Button label="My Button"/>
+                            {secondaryAction && secondaryActionLabel && (
+                            <Button 
+                            outline
+                            disabled={disable}
+                            label={secondaryActionLabel}
+                            onClick={handleSecondaryAction}
+                           />
+                            )}
+                            <Button 
+                             disabled={disable}
+                             label={actionLabel}
+                             onClick={handleSubmit}
+                            />
                             </div>
                         </div>
                     </div>       

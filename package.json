@@ -12,13 +12,16 @@
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
+    "axios": "^1.6.1",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
     "next": "13.4.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.48.2",
     "react-icons": "^4.11.0",
-    "typescript": "5.1.6"
+    "typescript": "5.1.6",
+    "zustand": "^4.4.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
