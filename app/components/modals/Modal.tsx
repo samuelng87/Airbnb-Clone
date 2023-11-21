@@ -167,7 +167,7 @@ const Modal: React.FC<ModalProps> = ({
                             w-full
                             "
                             >
-                            {secondaryAction && secondaryActionLabel && (
+                        {secondaryAction && secondaryActionLabel && (
                             <Button 
                             outline
                             disabled={disable}
@@ -181,6 +181,7 @@ const Modal: React.FC<ModalProps> = ({
                              onClick={handleSubmit}
                             />
                             </div>
+                            {footer}
                         </div>
                     </div>       
                 </div>
