@@ -7,12 +7,13 @@ import useRegisterModal from '@/app/hooks/useRegisterModal';
 import { useCallback, useState } from 'react';
 import useLoginModal from '@/app/hooks/useLoginModal';
 import { User } from '@prisma/client';
+import { signOut } from 'next-auth/react';
 
-interface userMenuProps {
+interface UserMenuProps {
   currentUser?: User | null
 }
 
-const UserMenu: React.FC<userMenuProps> = ({
+const UserMenu: React.FC<UserMenuProps> = ({
   currentUser
 }) => {
   const registerModal = useRegisterModal();
@@ -101,7 +102,16 @@ const UserMenu: React.FC<userMenuProps> = ({
                 <MenuItem
                 onClick={() => {}}
                 label="My properties"
-                />                
+                />    
+                <MenuItem
+                onClick={() => {}}
+                label="Airbnb my home"
+                />   
+                <hr />            
+                <MenuItem
+                onClick={() => signOut()}
+                label="Logout"
+                />           
               </>
               ) : (
               <>
