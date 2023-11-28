@@ -1,5 +1,5 @@
-import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
+
 import './globals.css'
 import Navbar from './components/navbar/Navbar'
 import ClientOnly from './components/ClientOnly'
@@ -9,7 +9,7 @@ import ToasterProvider from './providers/ToasterProvider'
 import LoginModal from './components/modals/LoginModal'
 import getCurrentUser from './actions/getCurrentUser'
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'Airbnb',
   description: 'Airbnb Clone',
 }
