@@ -8,6 +8,7 @@ import Search from './Search';
 import UserMenu from './UserMenu';
 
 import { Safeuser } from '@/app/types';
+import Categories from "./Categories";
 
 
 interface NavbarProps {
@@ -37,7 +38,9 @@ const Navbar: React.FC<NavbarProps> = ({
                 </div>
             </Container>
             </div>
-        </div>  )
+            <Categories />
+        </div>  
+        );
 }
 
 export default Navbar
