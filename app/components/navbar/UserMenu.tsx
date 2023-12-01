@@ -20,10 +20,16 @@ const UserMenu: React.FC<UserMenuProps> = ({
   const registerModal = useRegisterModal();
   const loginModal = useLoginModal();
   const [isOpen, setIsOpen] = useState(false);
+
   const toogleOpen = useCallback(() => {
     setIsOpen((value) => !value);
   }, []);
 
+  const onRent = useCallback(() => {
+    if (!currentUser) {
+      return loginModal.onOpen
+    }
+  }, []);
 
 
   return (
