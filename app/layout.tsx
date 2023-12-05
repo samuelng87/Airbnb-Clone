@@ -40,3 +40,7 @@ export default async function RootLayout({
     </html>
   )
 }
+
+
+
+// render, dependencies array, useCallback , React.FC, async
