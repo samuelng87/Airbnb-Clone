@@ -8,6 +8,13 @@ body,
   height: 100%;
 }
 
+.leaflet-bottom,
+.leftlet-control,
+.leaflet-pane,
+.leftlet-top {
+  z-index: 0 !important;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
