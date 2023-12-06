@@ -43,4 +43,4 @@ export default async function RootLayout({
 
 
 
-// render, dependencies array, useCallback , React.FC, async
+// render, dependencies array, useCallback , React.FC, async , destructuring
