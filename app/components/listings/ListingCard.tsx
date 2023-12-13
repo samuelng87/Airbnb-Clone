@@ -2,7 +2,7 @@
 
 import {Listing, Reservation } from "@prisma/client"
 
-import { Safeuser } from "@/app/types";
+import { SafeUser } from "@/app/types";
 import { useRouter } from "next/navigation"
 import useCountries from "@/app/hooks/useCountries";
 import React, { useCallback, useMemo } from "react";
@@ -18,7 +18,7 @@ interface ListingCardprops {
     disabled?: boolean;
     actionLabel?: string; 
     actionId?: string;
-    currentUser?: Safeuser | null;
+    currentUser?: SafeUser | null;
 }
 
 
@@ -106,7 +106,7 @@ const ListingCard: React.FC<ListingCardprops> = ({
                 </div>
             </div>
             <div className="font-semibold text-lg">
-                {location?.region} , {location?.label}
+                {location?.region}, {location?.label}
             </div>
             <div className="font-light text-neutral-500">
                 {reservationDate || data.category}
