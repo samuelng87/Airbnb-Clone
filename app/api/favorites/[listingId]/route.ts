@@ -70,3 +70,6 @@ export async function DELETE(
 
   return NextResponse.json(user);
 }
+
+
+// stackoverflow problem solved, instead of using "favoriteIds" change to "favorites" look for for "favoriteIds airbnb clone" for stackover flow
