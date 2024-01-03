@@ -23,16 +23,16 @@ export async function POST(
     throw new Error('Invalid ID');
   }
 
-  let favorites = [...(currentUser.favorites || [])];
+  let favoriteIds = [...(currentUser.favoriteIds || [])];
 
-  favorites.push(listingId);
+  favoriteIds.push(listingId);
 
   const user = await prisma.user.update({
     where: {
       id: currentUser.id
     },
     data: {
-        favorites
+      favoriteIds
     }
   });
 
@@ -55,21 +55,18 @@ export async function DELETE(
     throw new Error('Invalid ID');
   }
 
-  let favorites = [...(currentUser.favorites || [])];
+  let favoriteIds = [...(currentUser.favoriteIds || [])];
 
-  favorites = favorites.filter((id) => id !== listingId);
+  favoriteIds = favoriteIds.filter((id) => id !== listingId);
 
   const user = await prisma.user.update({
     where: {
       id: currentUser.id
     },
     data: {
-        favorites
+      favoriteIds
     }
   });
 
   return NextResponse.json(user);
 }
-
-
-// stackoverflow problem solved, instead of using "favoriteIds" change to "favorites" look for for "favoriteIds airbnb clone" for stackover flow
