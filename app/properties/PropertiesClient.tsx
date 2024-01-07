@@ -11,12 +11,12 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import ListingCard from "../components/listings/ListingCard";
 
-import { SafeListing, SafeUser } from "../types"
+import { SafeListings, SafeUser } from "../types"
 
 
 
 interface PropertiesClientProps {
-    listings: SafeListing[];
+    listings: SafeListings[];
     currentUser?: SafeUser | null;
 }
 

@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation"
 
-import { SafeListing, SafeReservation, SafeUser } from "@/app/types";
+import { SafeListings, safeReservation, SafeUser } from "@/app/types";
 import useCountries from "@/app/hooks/useCountries";
 import React, { useCallback, useMemo } from "react";
 import { format} from 'date-fns'
@@ -11,8 +11,8 @@ import HeartButton from "../HeartButton";
 import Button from "../Button";
 
 interface ListingCardprops {
-    data: SafeListing;
-    reservation?: SafeReservation;
+    data: SafeListings;
+    reservation?: safeReservation;
     onAction?: (id: string) => void;
     disabled?: boolean;
     actionLabel?: string; 

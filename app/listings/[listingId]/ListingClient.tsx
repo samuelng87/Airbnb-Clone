@@ -9,7 +9,7 @@ import { differenceInDays, eachDayOfInterval } from 'date-fns';
 
 import useLoginModal from "@/app/hooks/useLoginModal";
 
-import { SafeListing, SafeReservation, SafeUser } from "@/app/types";
+import { SafeListings, safeReservation, SafeUser } from "@/app/types";
 
 import Container from "@/app/components/Container";
 import { categories } from "@/app/components/navbar/Categories";
@@ -24,8 +24,8 @@ const initialDateRange = {
 };
 
 interface ListingClientProps {
-  reservations?: SafeReservation[];
-  listing: SafeListing & {
+  reservations?: safeReservation[];
+  listing: SafeListings & {
     user: SafeUser;
   };
   currentUser?: SafeUser | null;

@@ -7,12 +7,12 @@ import Logo from "./Logo";
 import Search from './Search';
 import UserMenu from './UserMenu';
 
-import { Safeuser } from '@/app/types';
+import { SafeUser } from '@/app/types';
 import Categories from "./Categories";
 
 
 interface NavbarProps {
-  currentUser?: Safeuser | null;
+  currentUser?: SafeUser | null;
 }
 
 const Navbar: React.FC<NavbarProps> = ({
