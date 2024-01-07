@@ -9,11 +9,11 @@ import useRegisterModal from '@/app/hooks/useRegisterModal';
 import useLoginModal from '@/app/hooks/useLoginModal';
 import useRentModal from '@/app/hooks/useRentModal';
 import { signOut } from 'next-auth/react';
-import { Safeuser } from '@/app/types';
+import { SafeUser } from '@/app/types';
 import { useRouter } from 'next/navigation';
 
 interface UserMenuProps {
-  currentUser?: Safeuser | null
+  currentUser?: SafeUser | null
 }
 
 const UserMenu: React.FC<UserMenuProps> = ({
