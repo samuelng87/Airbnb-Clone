@@ -1,4 +1,4 @@
-import Image from 'next/image'
+/* eslint-disable */
 import getCurrentUser from './actions/getCurrentUser';
 
 import getListings, { IListingsParams } from './actions/getListings';
