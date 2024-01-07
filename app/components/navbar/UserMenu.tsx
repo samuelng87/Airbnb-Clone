@@ -101,7 +101,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             <div className="flex flex-col cursor-pointer">
               {currentUser ? (
               <>
-                <MenuItem
+                <MenuItem 
                 onClick={()=> router.push('/')}
                 label="Home page"
                 />   
