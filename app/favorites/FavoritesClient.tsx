@@ -13,7 +13,7 @@ interface FavoritesClientProps {
 
 const FavoritesClient:React.FC<FavoritesClientProps> = ({
     listings,
-    currentUser
+    currentUser,
 }) => {
   return (
         <Container>
