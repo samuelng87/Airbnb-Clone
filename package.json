@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node vercel-build.js && next build",
+    "build": "next build",
     "start": "npm run lint && next dev",
     "lint": "echo 'Linting is disabled'"
   },
