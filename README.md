@@ -2,7 +2,7 @@
 
 # Face-Reconition GIF
 
-![](https://github.com/samuelng87/face-recognition-brain/blob/main/face-detection.gif)
+![](https://github.com/samuelng87/Airbnb-Clone/blob/main/airbnb.jpeg)
 
 ### `npm install`
 
