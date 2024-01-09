@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo, useState } from "react";
-import { FieldValue, FieldValues, SubmitHandler, useForm} from "react-hook-form";
+import { FieldValues, SubmitHandler, useForm} from "react-hook-form";
 
 import useRentModal from "@/app/hooks/useRentModal";
 
