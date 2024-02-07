@@ -1,7 +1,5 @@
 # Airbnb-Clone
 
-# Face-Reconition GIF
-
 ![](https://github.com/samuelng87/Airbnb-Clone/blob/main/airbnb.jpeg)
 
 ### `npm install`
